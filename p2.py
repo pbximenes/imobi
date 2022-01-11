@@ -1,0 +1,2 @@
+nome = "caio"
+print(nome)
