@@ -1,8 +1,7 @@
-
-from django.contrib import admin
-from django.urls import path, include
-from autenticacao import urls
+from django.urls import path
+from . import views
 
 urlpatterns = [
-    path('auth/', admin.site.urls)
+path('cadastro/', views.cadastro, name ="cadastro" ), 
+path('logar/', views.logar, name="logar"),   
 ]
