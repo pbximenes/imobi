@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def cadastro(request):
-    return HttpResponse('cadastro')
+    return render(request, 'cadastro.html')
 
 def logar(request):
     return HttpResponse('logar')
