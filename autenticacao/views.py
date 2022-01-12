@@ -6,3 +6,7 @@ def cadastro(request):
 
 def logar(request):
     return HttpResponse('logar')
+
+def redirect(request):
+    return logar(request)
+
