@@ -56,6 +56,10 @@ def logar(request):
             auth.login(request, usuario)
             return redirect('/')
 
+def sair(request):
+    auth.logout(request)
+    return redirect('/auth/logar')
+
 
         
 
